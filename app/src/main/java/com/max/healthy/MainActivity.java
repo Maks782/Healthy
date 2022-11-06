@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
       //  binding = ActivityMainBinding.inflate(getLayoutInflater());
       //  setContentView(binding.getRoot());
 
-        setContentView(R.layout.activity_first);
+        setContentView(R.layout.activity_home_page);
         View view = findViewById(android.R.id.content).getRootView();
         /*
         BottomNavigationView navView = findViewById(R.id.nav_view);
@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(binding.navView, navController);
 */
-        button = (Button) findViewById(R.id.button2);
+        button = (Button) findViewById(R.id.button3);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -83,8 +83,9 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
+
     public void openNewActivity(){
-        Intent intent = new Intent(this, TabActivity.class);
+        Intent intent = new Intent(this, FirstActivity.class);
         startActivity(intent);
     }
 

@@ -13,11 +13,18 @@
         android:theme="@style/Theme.AppSplash"
         tools:targetApi="31">
         <activity
+            android:name=".HomePageActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Healthy">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".TabActivity"
             android:exported="false"
             android:theme="@style/Theme.Healthy">
-
-        <meta-data
+            <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
