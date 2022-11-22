@@ -8,10 +8,20 @@
 
 
     <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="16dp"
+        android:text="Se connecter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
         android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="144dp"
+        android:layout_marginStart="25dp"
         android:layout_marginBottom="16dp"
         android:text="Créer un Profil"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -32,11 +42,13 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="96dp"
-        android:layout_marginTop="58dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="64dp"
         android:text="Bienvenue sur Healthy"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="#8BC34A"
+        android:textSize="34sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

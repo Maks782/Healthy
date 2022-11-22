@@ -13,6 +13,38 @@
         android:theme="@style/Theme.AppSplash"
         tools:targetApi="31">
         <activity
+            android:name=".CreateProfile4"
+            android:exported="false"
+            android:theme="@style/Theme.Healthy">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".CreateProfile3"
+            android:exported="false"
+            android:theme="@style/Theme.Healthy">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".CreateProfile2"
+            android:exported="false"
+            android:theme="@style/Theme.Healthy">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Connect2ProfileActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Healthy">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".HomePageActivity"
             android:exported="false"
             android:theme="@style/Theme.Healthy">
@@ -29,7 +61,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".FirstActivity"
+            android:name=".CeateProfile1"
             android:exported="false"
             android:theme="@style/Theme.Healthy">
             <meta-data

@@ -6,20 +6,20 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class HomePageActivity extends AppCompatActivity {
+public class CreateProfile2 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home_page);
+        setContentView(R.layout.activity_create_profile2);
 
-        findViewById(R.id.button3).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.button6).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openNewActivity();
             }
         });
-        findViewById(R.id.button4).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.imageButton3).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openNewActivity2();
@@ -28,13 +28,13 @@ public class HomePageActivity extends AppCompatActivity {
     }
 
     public void openNewActivity(){
-        Intent intent = new Intent(this, CeateProfile1.class);
+        Intent intent = new Intent(this, CreateProfile3.class);
+        startActivity(intent);
+    }
+    public void openNewActivity2(){
+        Intent intent = new Intent(this, HomePageActivity.class);
         startActivity(intent);
     }
 
-    public void openNewActivity2(){
-        Intent intent = new Intent(this, Connect2ProfileActivity.class);
-        startActivity(intent);
-    }
 
 }

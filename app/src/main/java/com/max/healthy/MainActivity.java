@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
     private ActivityMainBinding binding;
     private boolean isReady=false;
     private Button button;
+    private Button buttonBis;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,6 +53,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 openNewActivity();
+            }
+        });
+        buttonBis = (Button) findViewById(R.id.button4);
+        buttonBis.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openNewActivity2();
             }
         });
 
@@ -85,7 +93,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void openNewActivity(){
-        Intent intent = new Intent(this, FirstActivity.class);
+        Intent intent = new Intent(this, CeateProfile1.class);
+        startActivity(intent);
+    }
+    public void openNewActivity2(){
+        Intent intent = new Intent(this, Connect2ProfileActivity.class);
         startActivity(intent);
     }
 
