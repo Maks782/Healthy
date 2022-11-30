@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 
 public class CreateProfile2 extends AppCompatActivity {
 
@@ -25,11 +26,16 @@ public class CreateProfile2 extends AppCompatActivity {
                 openNewActivity2();
             }
         });
+
+
     }
 
     public void openNewActivity(){
         Intent intent = new Intent(this, CreateProfile3.class);
+        intent.putExtra("taille",((EditText)findViewById(R.id.editTaille)).getText().toString());
+        intent.putExtra("poids",((EditText)findViewById(R.id.editPoids)).getText().toString());
         startActivity(intent);
+
     }
     public void openNewActivity2(){
         Intent intent = new Intent(this, HomePageActivity.class);

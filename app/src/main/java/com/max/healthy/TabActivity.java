@@ -7,6 +7,7 @@ import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
 import android.os.Bundle;
+import android.widget.TextView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -16,6 +17,16 @@ public class TabActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tab);
+
+
+        //pour recuperer la variable prenom
+        Bundle extras = getIntent().getExtras();
+        final TextView calcIMC = (TextView) findViewById(R.id.calcIMC);
+        calcIMC.setText(extras.getString("poids"));
+
+        //int taillefinale = Integer.parseInt("taille");
+        //int poidsfinale = Integer.parseInt("poids");
+
 
         BottomNavigationView navView = findViewById(R.id.nav_view);
         // Passing each menu ID as a set of Ids because each

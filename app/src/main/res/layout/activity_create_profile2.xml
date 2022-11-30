@@ -7,6 +7,18 @@
     android:layout_height="match_parent"
     tools:context=".CreateProfile2">
 
+    <EditText
+        android:id="@+id/editTextName5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="101dp"
+        android:layout_marginTop="41dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Âge"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editPoids" />
+
     <ImageButton
         android:id="@+id/imageButton3"
         android:layout_width="50dp"
@@ -25,12 +37,12 @@
         android:layout_marginTop="41dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Âge"
+        android:text="Sexe"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextName3" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextName5" />
 
     <EditText
-        android:id="@+id/editTextName3"
+        android:id="@+id/editPoids"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="101dp"
@@ -39,15 +51,15 @@
         android:inputType="textPersonName"
         android:text="Poids"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextFirsname3" />
+        app:layout_constraintTop_toBottomOf="@+id/editTaille" />
 
     <Button
         android:id="@+id/button6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="31dp"
+        android:layout_marginTop="41dp"
         android:layout_marginEnd="156dp"
-        android:layout_marginBottom="224dp"
+        android:layout_marginBottom="150dp"
         android:backgroundTint="#8BC34A"
         android:text="Suivant"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -55,7 +67,7 @@
         app:layout_constraintTop_toBottomOf="@+id/editTextName4" />
 
     <EditText
-        android:id="@+id/editTextFirsname3"
+        android:id="@+id/editTaille"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="101dp"
@@ -71,9 +83,9 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="136dp"
+        android:layout_marginStart="100dp"
         android:layout_marginTop="105dp"
-        android:text="Mon IMC"
+        android:text="Mon IMC/IMG"
         android:textSize="34sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"

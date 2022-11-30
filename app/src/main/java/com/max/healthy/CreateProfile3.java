@@ -4,14 +4,27 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
+import android.widget.EditText;
+import android.widget.TextView;
 
 public class CreateProfile3 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        Log.i("maxime", "prof3");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_profile3);
+        //pour recuperer la variable prenom
+        Bundle extras = getIntent().getExtras();
+        final TextView testPrenom = (TextView) findViewById(R.id.testTaille);
+        testPrenom.setText(extras.getString("taille"));
+        /*if (extras != null) {
+            //Log.i("maxime", "taille="+taille);
+            //The key argument here must match that used in the other activity
+
+        }*/
 
         findViewById(R.id.button7).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -29,6 +42,11 @@ public class CreateProfile3 extends AppCompatActivity {
 
     public void openNewActivity(){
         Intent intent = new Intent(this, CreateProfile4.class);
+        //Log.i("maxime", "getparameter");
+        Bundle extras = getIntent().getExtras();
+        intent.putExtra("taillefinale",extras.getString("taille"));
+        intent.putExtra("poids",extras.getString("poids"));
+        //intent.putExtra("poids",extras.getString("poids"));
         startActivity(intent);
     }
     public void openNewActivity2(){
