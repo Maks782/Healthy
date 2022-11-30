@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 
 public class CeateProfile1 extends AppCompatActivity {
 
@@ -28,7 +29,13 @@ public class CeateProfile1 extends AppCompatActivity {
     }
 
     public void openNewActivity(){
+        String nom;
+        String prenom;
+        nom = ((EditText)findViewById(R.id.editNom)).getText().toString();
+        prenom = ((EditText)findViewById(R.id.editPrenom)).getText().toString();
         Intent intent = new Intent(this, CreateProfile2.class);
+        intent.putExtra("nom", nom);
+        intent.putExtra("prenom",prenom);
         startActivity(intent);
     }
     public void openNewActivity2(){

@@ -8,14 +8,14 @@
     tools:context=".CreateProfile2">
 
     <EditText
-        android:id="@+id/editTextName5"
+        android:id="@+id/editAge"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="101dp"
         android:layout_marginTop="41dp"
         android:ems="10"
+        android:hint="Âge"
         android:inputType="textPersonName"
-        android:text="Âge"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editPoids" />
 
@@ -30,16 +30,16 @@
         app:srcCompat="@drawable/ic_healthy_splash" />
 
     <EditText
-        android:id="@+id/editTextName4"
+        android:id="@+id/editSexe"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="101dp"
         android:layout_marginTop="41dp"
         android:ems="10"
+        android:hint="Sexe : F/M"
         android:inputType="textPersonName"
-        android:text="Sexe : F/M"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextName5" />
+        app:layout_constraintTop_toBottomOf="@+id/editAge" />
 
     <EditText
         android:id="@+id/editPoids"
@@ -48,8 +48,8 @@
         android:layout_marginStart="101dp"
         android:layout_marginTop="41dp"
         android:ems="10"
+        android:hint="Poids (kg)"
         android:inputType="textPersonName"
-        android:text="Poids (kg)"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTaille" />
 
@@ -64,7 +64,7 @@
         android:text="Suivant"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextName4" />
+        app:layout_constraintTop_toBottomOf="@+id/editSexe" />
 
     <EditText
         android:id="@+id/editTaille"
@@ -73,9 +73,9 @@
         android:layout_marginStart="101dp"
         android:layout_marginTop="198dp"
         android:ems="10"
+        android:hint="Taille (cm)"
         android:inputType="textPersonName"
         android:minHeight="48dp"
-        android:text="Taille (m)"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

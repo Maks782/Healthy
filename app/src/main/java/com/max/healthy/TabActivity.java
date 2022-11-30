@@ -24,16 +24,6 @@ public class TabActivity extends AppCompatActivity {
         final TextView calcIMC = (TextView) findViewById(R.id.calcIMC);
         calcIMC.setText(extras.getString("poids"));
 
-        //int taillefinale = Integer.parseInt("taille");
-        //int poidsfinal = Integer.parseInt("poids");
-        //new int IMC = poidsfinal/(taillefinale*taillefinale);
-        //switch case en fonction des valeurs de l'imc (normal/surpoids/obese...)
-        //new int IMGH = (1,2*IMC)+(0,23*age)-10,8;
-        //new int IMGF = (1,2*IMC)+(0,23*age);
-        //switch case en fonction des valeurs de l'img (trop maigre/pourcentage normal/trop de graisse)
-        // d'après ces premiers résultats il apparait que vous etes (ex) en surpoids avec trop
-        // de graisse notre recommendation est la perte de poids et de continuer/commencer une activité
-
         //2eme onglet : mise en relation avec des specialistes
 
         //
