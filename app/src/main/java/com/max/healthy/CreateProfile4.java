@@ -31,9 +31,11 @@ public class CreateProfile4 extends AppCompatActivity {
     }
 
     public void openNewActivity(){
-        Intent intent = new Intent(this, TabActivity.class);
+        Intent intent = new Intent(this, MonBilan.class);
         Bundle extras = getIntent().getExtras();
         intent.putExtra("poids",extras.getString("poids"));
+        intent.putExtra("taille",extras.getString("taille"));
+
         //intent.putExtra("poids",extras.getString("poids"));
         startActivity(intent);
     }

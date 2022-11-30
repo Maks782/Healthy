@@ -37,7 +37,7 @@
         android:layout_marginTop="41dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Sexe"
+        android:text="Sexe : F/M"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextName5" />
 
@@ -49,7 +49,7 @@
         android:layout_marginTop="41dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Poids"
+        android:text="Poids (kg)"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTaille" />
 
@@ -75,7 +75,7 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:minHeight="48dp"
-        android:text="Taille"
+        android:text="Taille (m)"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

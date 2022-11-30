@@ -4,35 +4,23 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
-import android.widget.EditText;
-import android.widget.TextView;
 
-public class CreateProfile3 extends AppCompatActivity {
+public class MonBilan extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        Log.i("maxime", "prof3");
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_create_profile3);
-        //pour recuperer la variable prenom
+        setContentView(R.layout.activity_mon_bilan);
         Bundle extras = getIntent().getExtras();
-        final TextView testPrenom = (TextView) findViewById(R.id.testTaille);
-        testPrenom.setText(extras.getString("taille"));
-        /*if (extras != null) {
-            //Log.i("maxime", "taille="+taille);
-            //The key argument here must match that used in the other activity
 
-        }*/
-
-        findViewById(R.id.button7).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.MonProfil).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openNewActivity();
             }
         });
-        findViewById(R.id.imageButton).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.imageButton6).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openNewActivity2();
@@ -41,10 +29,8 @@ public class CreateProfile3 extends AppCompatActivity {
     }
 
     public void openNewActivity(){
-        Intent intent = new Intent(this, CreateProfile4.class);
-        //Log.i("maxime", "getparameter");
+        Intent intent = new Intent(this, TabActivity.class);
         Bundle extras = getIntent().getExtras();
-        intent.putExtra("taille",extras.getString("taille"));
         intent.putExtra("poids",extras.getString("poids"));
         //intent.putExtra("poids",extras.getString("poids"));
         startActivity(intent);
