@@ -84,7 +84,7 @@ public class MonBilan extends AppCompatActivity {
     }
 
     public void openNewActivity(){
-        Intent intent = new Intent(this, TabActivity.class);
+        Intent intent = new Intent(this, MonBilan2.class);
         Bundle extras = getIntent().getExtras();
         intent.putExtra("taille",extras.getInt("taille"));
         intent.putExtra("poids",extras.getInt("poids"));
@@ -92,6 +92,7 @@ public class MonBilan extends AppCompatActivity {
         intent.putExtra("sexe",extras.getString("sexe"));
         intent.putExtra("nom", extras.getString("nom"));
         intent.putExtra("prenom", extras.getString("prenom"));
+        intent.putExtra("activite", extras.getString("activite"));
         startActivity(intent);
     }
     public void openNewActivity2(){

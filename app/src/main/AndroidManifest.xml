@@ -14,7 +14,8 @@
         tools:targetApi="31">
         <activity
             android:name=".MonBilan2"
-            android:exported="false">
+            android:exported="false"
+            android:theme="@style/Theme.Healthy">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />

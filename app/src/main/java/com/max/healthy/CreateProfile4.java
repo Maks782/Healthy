@@ -39,6 +39,7 @@ public class CreateProfile4 extends AppCompatActivity {
         intent.putExtra("sexe",extras.getString("sexe"));
         intent.putExtra("nom", extras.getString("nom"));
         intent.putExtra("prenom", extras.getString("prenom"));
+        intent.putExtra("activite", extras.getString("activite"));
         startActivity(intent);
     }
     public void openNewActivity2(){

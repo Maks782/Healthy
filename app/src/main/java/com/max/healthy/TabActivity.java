@@ -21,8 +21,9 @@ public class TabActivity extends AppCompatActivity {
 
         //pour recuperer la variable prenom
         Bundle extras = getIntent().getExtras();
+        String Activite = extras.getString("activite");
         final TextView calcIMC = (TextView) findViewById(R.id.calcIMC);
-        calcIMC.setText(extras.getString("poids"));
+        calcIMC.setText(extras.getString("activite"));
 
         //2eme onglet : mise en relation avec des specialistes
 
