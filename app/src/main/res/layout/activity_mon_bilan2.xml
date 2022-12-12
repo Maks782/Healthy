@@ -6,6 +6,38 @@
     android:layout_height="match_parent"
     tools:context=".MonBilan2">
 
+    <TextView
+        android:id="@+id/Kal"
+        android:layout_width="314dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="344dp"
+        android:layout_marginEnd="49dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Consommation calories journalière :"
+        android:textAlignment="center"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Meta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="101dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Ton Métabolisme :"
+        android:textAlignment="center"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <ImageButton
         android:id="@+id/imageButton7"
         android:layout_width="50dp"
@@ -32,20 +64,34 @@
         android:id="@+id/SuiteBilan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="150dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="238dp"
+        android:layout_marginEnd="130dp"
         android:layout_marginBottom="24dp"
         android:backgroundTint="#8BC34A"
         android:text="Suite du bilan"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Kal" />
 
-    <Button
-        android:id="@+id/button9"
+    <TextView
+        android:id="@+id/Meta1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="196dp"
-        android:layout_marginTop="278dp"
-        android:text="Button"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="260dp"
+        android:text="TextView"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Kal1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="60dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Kal" />
 </androidx.constraintlayout.widget.ConstraintLayout>

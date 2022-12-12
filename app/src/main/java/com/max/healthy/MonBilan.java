@@ -9,7 +9,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class MonBilan extends AppCompatActivity {
-
+    String ResIMC = "";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,7 +21,7 @@ public class MonBilan extends AppCompatActivity {
         int age = extras.getInt("age");
         String sexe = extras.getString("sexe");
         String prenom = extras.getString("prenom");
-        String ResIMC = "";
+
         String ResIMG = "";
 
         double IMC = poids / ((taille / 100.0) * (taille / 100.0));
@@ -93,6 +93,8 @@ public class MonBilan extends AppCompatActivity {
         intent.putExtra("nom", extras.getString("nom"));
         intent.putExtra("prenom", extras.getString("prenom"));
         intent.putExtra("activite", extras.getString("activite"));
+        intent.putExtra("obj", extras.getString("obj"));
+        intent.putExtra("ResImc",ResIMC);
         startActivity(intent);
     }
     public void openNewActivity2(){

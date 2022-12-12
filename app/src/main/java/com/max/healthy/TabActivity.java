@@ -7,6 +7,7 @@ import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -22,8 +23,8 @@ public class TabActivity extends AppCompatActivity {
         //pour recuperer la variable prenom
         Bundle extras = getIntent().getExtras();
         String Activite = extras.getString("activite");
-        final TextView calcIMC = (TextView) findViewById(R.id.calcIMC);
-        calcIMC.setText(extras.getString("activite"));
+        //final TextView calcIMC = (TextView) findViewById(R.id.calcIMC);
+        //calcIMC.setText(extras.getString("activite"));
 
         //2eme onglet : mise en relation avec des specialistes
 
@@ -39,5 +40,8 @@ public class TabActivity extends AppCompatActivity {
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(navView, navController);
 
+
+
     }
+
 }
