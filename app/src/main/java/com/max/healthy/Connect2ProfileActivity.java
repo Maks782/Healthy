@@ -16,13 +16,12 @@ public class Connect2ProfileActivity extends AppCompatActivity {
         findViewById(R.id.button5).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openNewActivity();
+                //openNewActivity();
             }
         });
         findViewById(R.id.imageButton9).setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                openNewActivity2();
+            public void onClick(View v) {openNewActivity2();
             }
         });
     }
