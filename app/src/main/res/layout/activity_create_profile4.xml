@@ -10,6 +10,7 @@
         android:id="@+id/button8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="151dp"
         android:layout_marginTop="31dp"
         android:layout_marginEnd="161dp"
         android:layout_marginBottom="224dp"
@@ -17,6 +18,7 @@
         android:text="Suivant"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editSexe" />
 
     <TextView
@@ -25,9 +27,11 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="109dp"
         android:layout_marginTop="105dp"
+        android:layout_marginEnd="106dp"
         android:text="Mon Objectif"
         android:textSize="34sp"
         android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -35,9 +39,11 @@
         android:id="@+id/imageButton2"
         android:layout_width="50dp"
         android:layout_height="50dp"
+        android:layout_marginStart="326dp"
         android:layout_marginTop="35dp"
         android:layout_marginEnd="35dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_healthy_splash" />
 
@@ -47,9 +53,11 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="140dp"
         android:layout_marginTop="198dp"
+        android:layout_marginEnd="141dp"
         android:text="ToggleButton"
         android:textOff="Perte de poids"
         android:textOn="Perte de poids"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -59,9 +67,11 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="143dp"
         android:layout_marginTop="41dp"
+        android:layout_marginEnd="142dp"
         android:text="ToggleButton"
         android:textOff="Prise de Poids"
         android:textOn="Prise de Poids"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toggleButton3" />
 
@@ -71,9 +81,11 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="159dp"
         android:layout_marginTop="41dp"
+        android:layout_marginEnd="159dp"
         android:text="ToggleButton"
         android:textOff="Maintien "
         android:textOn="Maintien"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toggleButton" />
 

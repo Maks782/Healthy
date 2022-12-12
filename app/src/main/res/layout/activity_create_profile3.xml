@@ -10,6 +10,7 @@
         android:id="@+id/button7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="156dp"
         android:layout_marginTop="31dp"
         android:layout_marginEnd="156dp"
         android:layout_marginBottom="224dp"
@@ -17,6 +18,7 @@
         android:text="Suivant"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editSexe" />
 
     <TextView
@@ -25,9 +27,11 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="109dp"
         android:layout_marginTop="105dp"
+        android:layout_marginEnd="109dp"
         android:text="Mon Activité"
         android:textSize="34sp"
         android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -43,7 +47,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="168dp"
         android:layout_marginTop="41dp"
+        android:layout_marginEnd="167dp"
         android:text="Actif"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/swPasActif" />
 
@@ -53,7 +59,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="155dp"
         android:layout_marginTop="198dp"
+        android:layout_marginEnd="155dp"
         android:text="Pas actif"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -63,7 +71,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="153dp"
         android:layout_marginTop="41dp"
+        android:layout_marginEnd="152dp"
         android:text="Très actif"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/swActif" />
 
@@ -71,9 +81,11 @@
         android:id="@+id/imageButton"
         android:layout_width="50dp"
         android:layout_height="50dp"
+        android:layout_marginStart="326dp"
         android:layout_marginTop="35dp"
         android:layout_marginEnd="35dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_healthy_splash" />
 
@@ -82,9 +94,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="172dp"
+        android:layout_marginEnd="181dp"
         android:layout_marginBottom="105dp"
         android:text="TextView"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

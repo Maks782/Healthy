@@ -19,11 +19,20 @@ public class Connect2ProfileActivity extends AppCompatActivity {
                 openNewActivity();
             }
         });
+        findViewById(R.id.imageButton9).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openNewActivity2();
+            }
+        });
     }
 
     public void openNewActivity(){
         Intent intent = new Intent(this, TabActivity.class);
         startActivity(intent);
     }
-
+    public void openNewActivity2(){
+        Intent intent = new Intent(this, HomePageActivity.class);
+        startActivity(intent);
+    }
 }

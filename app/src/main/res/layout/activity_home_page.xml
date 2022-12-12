@@ -11,20 +11,24 @@
         android:id="@+id/button4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="25dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginEnd="40dp"
         android:layout_marginBottom="16dp"
         android:text="Se connecter"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button3" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="25dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="17dp"
         android:layout_marginBottom="16dp"
         android:text="Créer un Profil"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button4"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
@@ -44,11 +48,13 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="34dp"
         android:layout_marginTop="64dp"
+        android:layout_marginEnd="34dp"
         android:text="Bienvenue sur Healthy"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="#8BC34A"
         android:textSize="34sp"
         android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
