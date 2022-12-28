@@ -1,5 +1,6 @@
 package com.max.healthy;
-
+// Cette activity est en travaux comme en témoigne son affichage, nous aimerions l'exploiter
+//beaucoup plus
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
@@ -19,17 +20,10 @@ public class TabActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tab);
 
-
-        //pour recuperer la variable prenom
         Bundle extras = getIntent().getExtras();
-        String Activite = extras.getString("activite");
-        //final TextView calcIMC = (TextView) findViewById(R.id.calcIMC);
-        //calcIMC.setText(extras.getString("activite"));
-
 
         //2eme onglet : mise en relation avec des specialistes
 
-        //
 
         BottomNavigationView navView = findViewById(R.id.nav_view);
         // Passing each menu ID as a set of Ids because each

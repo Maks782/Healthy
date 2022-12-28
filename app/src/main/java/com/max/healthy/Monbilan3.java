@@ -27,7 +27,7 @@ int kilos;
         }
 
         final TextView PIdeal = (TextView) findViewById(R.id.PoidsIdeal);
-        PIdeal.setText("D'après les informations renseignées, nous estimons que, pour votre taille, le poids idéal est de " +poidsIdeal+ " kilos");
+        PIdeal.setText("D'après les informations renseignées, nous estimons que, pour ta taille, le poids idéal est de " +poidsIdeal+ " kilos");
 
         findViewById(R.id.Calculer).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -36,7 +36,7 @@ int kilos;
                 kilos = Integer.parseInt(kilosStr);
                 delai = (int) (kilos * 1.5);
                 final TextView Delai = (TextView) findViewById(R.id.resultat);
-                Delai.setText("D'après nos estimations, votre objectif est atteignable en " + delai + " semaines");
+                Delai.setText("D'après nos estimations, ton objectif est atteignable en " + delai + " semaines");
             }
         });
         findViewById(R.id.Commencer).setOnClickListener(new View.OnClickListener() {

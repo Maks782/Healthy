@@ -1,4 +1,5 @@
 package com.max.healthy;
+//Cette activity correpsond au premier bilan individualisé de l'utilisateur
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,6 +10,8 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class MonBilan extends AppCompatActivity {
+    // c'est ici que l'on va récupérer et exploiter les différentes informations de l'utilisateur
+    //que l'on a transmit de page en page.
     String ResIMC = "";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,7 +26,7 @@ public class MonBilan extends AppCompatActivity {
         String prenom = extras.getString("prenom");
 
         String ResIMG = "";
-
+// Ces différentes informations vont nous permettre de calculer l'IMC et l'IMG
         double IMC = poids / ((taille / 100.0) * (taille / 100.0));
         double IMG = 0;
         if (sexe.toLowerCase().equals("f")) {
@@ -31,7 +34,8 @@ public class MonBilan extends AppCompatActivity {
         } else {
             IMG = (1.2 * IMC) + (0.23 * age) - 10.8 - 5.4;
         }
-
+// en fonction du résulat obtenus, on va exprimer le résulat de l'utilisateur en fonction des
+// normes connues
         if (IMC <= 18.5) {
             ResIMC = "Maigreur";
         } else if (IMC > 18.5 && IMC <= 25) {
@@ -45,17 +49,17 @@ public class MonBilan extends AppCompatActivity {
         }
 
         if (sexe.toLowerCase().equals("f") && IMG <= 25){
-            ResIMG = "Trop maigre";
+            ResIMG = "Trop faible";
         } else if (sexe.toLowerCase().equals("f") && IMG > 25 && IMG <= 30){
-            ResIMG = "Pourcentage Normal";
+            ResIMG = " Normal";
         } else if (sexe.toLowerCase().equals("f") && IMG > 30){
-            ResIMG = "Trop de graisse";
+            ResIMG = "Trop élevé";
         }else if  (sexe.toLowerCase().equals("m") && IMG <= 15){
-            ResIMG = "Trop maigre";
+            ResIMG = "Trop faible";
         } else if (sexe.toLowerCase().equals("m") && IMG > 15 && IMG <= 20){
-            ResIMG = "Pourcentage Normal";
+            ResIMG = " Normal";
         } else if (sexe.toLowerCase().equals("m") && IMG > 20) {
-            ResIMG = "Trop de graisse";
+            ResIMG = "Trop élevé";
         }else{
             ResIMG = "erreur null";
         }
@@ -72,7 +76,7 @@ public class MonBilan extends AppCompatActivity {
                 openNewActivity2();
             }
         });
-
+//Enfin on va afficher les différents résultats avec une petite phrase personnalisée
         final TextView viewIMC = (TextView) findViewById(R.id.viewIMC);
         viewIMC.setText(String.format("%.02f", IMC));
 
@@ -80,7 +84,7 @@ public class MonBilan extends AppCompatActivity {
         viewIMG.setText(String.format("%.02f", IMG )+" %");
 
         final TextView viewConcl = (TextView) findViewById(R.id.viewConcl);
-        viewConcl.setText("Salut " + prenom + ", d'après les résultats obtenus ta corpulence est la suivante : "+ResIMC +"\n De plus d'après ton IMG, on interprète celui-ci comme : "+ ResIMG);
+        viewConcl.setText("Salut " + prenom + ", d'après les résultats obtenus ta corpulence est la suivante : "+ResIMC +"\n De plus d'après ton IMG, ton pourcentage de masse grasse est  : "+ ResIMG);
     }
 
     public void openNewActivity(){

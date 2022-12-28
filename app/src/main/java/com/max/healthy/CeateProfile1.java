@@ -1,5 +1,5 @@
 package com.max.healthy;
-
+//Cette activity correpsond à la première partie de création du profil
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -29,6 +29,8 @@ public class CeateProfile1 extends AppCompatActivity {
     }
 
     public void openNewActivity(){
+        //Ici on récupère les informations de nom et prenom que l'on transmettra aux pages
+        //suivantes sous forme de String
         String nom;
         String prenom;
         nom = ((EditText)findViewById(R.id.editNom)).getText().toString();

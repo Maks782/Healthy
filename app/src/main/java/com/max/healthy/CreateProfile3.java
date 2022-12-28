@@ -1,4 +1,5 @@
 package com.max.healthy;
+//Cette activity correpsond à la troisème partie de création du profil
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -19,13 +20,6 @@ public class CreateProfile3 extends AppCompatActivity {
         setContentView(R.layout.activity_create_profile3);
         //pour recuperer la variable prenom
         Bundle extras = getIntent().getExtras();
-        final TextView testPrenom = (TextView) findViewById(R.id.testTaille);
-        testPrenom.setText(extras.getString("taille"));
-        /*if (extras != null) {
-            //Log.i("maxime", "taille="+taille);
-            //The key argument here must match that used in the other activity
-
-        }*/
 
         findViewById(R.id.button7).setOnClickListener(new View.OnClickListener() {
             @Override

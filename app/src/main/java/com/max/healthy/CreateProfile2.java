@@ -1,5 +1,5 @@
 package com.max.healthy;
-
+//Cette activity correpsond à la seconde partie de création du profil
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -30,6 +30,11 @@ public class CreateProfile2 extends AppCompatActivity {
     }
 
     public void openNewActivity(){
+        // ici on va récupérer d'autres informations que l'utilisateur entre tel que la taille
+        //le poids, l'age et le sexe.
+        // Ici certaine informations seront récupérées sous forme de String et d'autre en int
+        //On verifiera que l'utilisateur rentre bien des chiffre lorsque que cela lui est demandé
+        // au risque de ne pas pouvoir passer à la page suivante
         int taille;
         int poids;
         int age;

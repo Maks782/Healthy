@@ -1,5 +1,6 @@
 package com.max.healthy;
-
+// Cette activity sert aux utilisateurs qui ont déjà un profil, dans notre cas on ne stocke pas encore
+// de profil sur un serveur, c'est une partie que nous aimerions développer davantage
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;

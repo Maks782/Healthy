@@ -2,6 +2,7 @@ package com.max.healthy;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -70,6 +71,13 @@ public class Tableau_de_bord extends AppCompatActivity {
             }
         });
 
+        findViewById(R.id.Suivant).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openNewActivity();
+            }
+        });
+
     }
      void updateProgressBar(int a){
          ProgressBar progress_bar = (ProgressBar) findViewById(R.id.progress_bar);
@@ -82,5 +90,10 @@ public class Tableau_de_bord extends AppCompatActivity {
         progress_bar.setProgress(a);
         TextView text_view_progress2 = (TextView) findViewById(R.id.text_view_progress);
         text_view_progress2.setText(""+a+" %");
+    }
+
+    public void openNewActivity(){
+        Intent intent = new Intent(this, TabActivity.class);
+        startActivity(intent);
     }
 }

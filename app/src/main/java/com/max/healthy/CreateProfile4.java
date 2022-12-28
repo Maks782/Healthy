@@ -1,5 +1,5 @@
 package com.max.healthy;
-
+//Cette activity correpsond à la troisème partie de création du profil
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
