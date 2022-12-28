@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 
-public class CeateProfile1 extends AppCompatActivity {
+public class CreateProfile1 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

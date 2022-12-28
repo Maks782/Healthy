@@ -28,7 +28,7 @@ public class HomePageActivity extends AppCompatActivity {
     }
 
     public void openNewActivity(){
-        Intent intent = new Intent(this, CeateProfile1.class);
+        Intent intent = new Intent(this, CreateProfile1.class);
         startActivity(intent);
     }
 

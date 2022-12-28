@@ -9,14 +9,8 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.splashscreen.SplashScreen;
-import androidx.navigation.NavController;
-import androidx.navigation.Navigation;
-import androidx.navigation.ui.AppBarConfiguration;
-import androidx.navigation.ui.NavigationUI;
 
-import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.max.healthy.databinding.ActivityMainBinding;
-import com.max.healthy.ui.login.LoginActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -93,7 +87,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void openNewActivity(){
-        Intent intent = new Intent(this, CeateProfile1.class);
+        Intent intent = new Intent(this, CreateProfile1.class);
         startActivity(intent);
     }
     public void openNewActivity2(){

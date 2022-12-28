@@ -1,16 +1,16 @@
-package com.max.healthy.ui.notifications;
+package com.max.healthy.ui.specialistes;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class NotificationsViewModel extends ViewModel {
+public class SpecialistesViewModel extends ViewModel {
 
     private final MutableLiveData<String> mText;
 
-    public NotificationsViewModel() {
+    public SpecialistesViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is notifications fragment");
+        mText.setValue("This is Specialistes fragment");
     }
 
     public LiveData<String> getText() {

@@ -13,8 +13,8 @@
 
 
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.max.healthy.ui.notifications.NotificationsFragment"
+        android:id="@+id/navigation_specialistes"
+        android:name="com.max.healthy.ui.specialistes.SpecialistesFragment"
         android:label="@string/title_specialistes"
         tools:layout="@layout/fragment_specialistes" />
 </navigation>

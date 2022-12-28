@@ -93,7 +93,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".CeateProfile1"
+            android:name=".CreateProfile1"
             android:exported="false"
             android:theme="@style/Theme.Healthy" >
             <meta-data
