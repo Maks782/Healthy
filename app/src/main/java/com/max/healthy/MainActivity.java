@@ -58,6 +58,12 @@ public class MainActivity extends AppCompatActivity {
         });
 
         // Set up an OnPreDrawListener to the root view.
+        //Concernant la mise en place du Splash Screen, le système va commencer par afficher celui-ci
+        //Puis le système va appeler  onPreDraw()pour savoir si l'application est prête à être lancée
+        // Notre appli n'a rien a charger donc elle est prête instantanément, cependant on lui fixe
+        //un delay pour que celui-ci s'affiche un minimum, il répondra que l'appli n'est pas prête
+        // pendant toute la durée du délais, une fois ce délais écoulé il répondra que
+        // l'appli est prête et on arrivera sur l'écran d'accueil
         view.getViewTreeObserver().addOnPreDrawListener(
                 new ViewTreeObserver.OnPreDrawListener() {
                     @Override

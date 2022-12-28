@@ -47,7 +47,7 @@ public class HomeFragment extends Fragment {
         binding = null;
     }
     public void openNewActivity2(){
-        Intent intent = new Intent(Intent.ACTION_CALL);
+        Intent intent = new Intent(getActivity(), HomePageActivity.class);
         startActivity(intent);
     }
 }

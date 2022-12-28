@@ -1,5 +1,6 @@
 package com.max.healthy;
-
+//Cette activity correspond à la page d'accueil de l'application
+//l'utilisateur à le choix entre se connecter ou se créer un profil
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;

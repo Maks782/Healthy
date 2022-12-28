@@ -20,12 +20,19 @@ public class CreateProfile1 extends AppCompatActivity {
                 openNewActivity();
             }
         });
+        // les boutons marchent de la manière suivante : on cherche sur la page un bouton via son
+        //identifiant que l'on a fixé dans les layout, puis lorsque l'on a trouvé ce bouton, on lui
+        // associe un listener qui sera appeler quand l'utilisateur appuie sur le bouton
+        // le listener va alors appeler la fonction openNewActivity() qui elle va permettre
+        // de passer à l'activity suivante ici il s'agit de CreateProfile2
         findViewById(R.id.imageButton4).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openNewActivity2();
             }
         });
+        // Ce bouton est un peu différent, il s'agit d'un imageButton, il est présent sur toutes
+        // les pages et permet de revenir à la page d'accueil lorsque l'utilisateur s'est trompé
     }
 
     public void openNewActivity(){

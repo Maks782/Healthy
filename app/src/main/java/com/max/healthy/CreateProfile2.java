@@ -32,8 +32,8 @@ public class CreateProfile2 extends AppCompatActivity {
     public void openNewActivity(){
         // ici on va récupérer d'autres informations que l'utilisateur entre tel que la taille
         //le poids, l'age et le sexe.
-        // Ici certaine informations seront récupérées sous forme de String et d'autre en int
-        //On verifiera que l'utilisateur rentre bien des chiffre lorsque que cela lui est demandé
+        // Certaines informations seront récupérées sous forme de String et d'autres en int
+        //On verifiera que l'utilisateur entre bien des chiffre lorsque que cela lui est demandé
         // au risque de ne pas pouvoir passer à la page suivante
         int taille;
         int poids;
